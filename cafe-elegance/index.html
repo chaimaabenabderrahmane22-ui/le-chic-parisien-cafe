@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Chic Parisien-Café& Brasserie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 1. شريط التنقل العلوي (Navbar) !-->
+<header class="Navbar-header">
+    <div class="nav-top">
+    <div class="logo">
+        <h1>LE CHIC PARISIEN</h1>
+    <span>CAFÉ & BRASSERIE</span>
+    </div>
+    <a href="#reservations"
+    class="reserve-btn">خجزالطاولة</a>
+    </div>
+    <nav class="nav-links">
+    <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#about">قصتنا</a></li>
+        <li><a href="#menu">القائمة</a></li>
+        <li><a href="#reservations">الحجوزات</a></li>
+        <li><a href="#location">الموقع</a></li>
+        <li><a href="#contact">اتصلي بنا</a></li>
+    </ul>
+    </nav>
+</header>
+<!-- 2. الواجهة الرئيسية الكاملة (Hero Section) -->
+ <section id="home" class="hero-section">
+    <img src="caffe.jpg" alt="café parisien" class="hero-bg">
+    <div class="hero-content">
+        <h1 class="hero-title">أرقى نكهات العالم</h1>
+        <p class="hero-slogan">أناقة باريسية ساحرة في كل فنجان</p>
+        <a href="#menu" class="explore-btn">استكشفي القائمة ▼</a>
+    </div>
+ </section>
+
+<!-- 3. قسم قائمة الطعام والشراب (Menu Section) -->
+ <section id="menu" class="menu-section">
+    <div class="menu-board">
+    <h2 class="menu-main-title">Le Menu</h2>
+
+    <div class="menu-columns">
+        <!-- عمود المشروبات -->
+                <div class="menu-column">
+                    <h3 class="column-title">LES BOISSONS</h3>
+                    <div class="menu-item">
+                        <span class="item-name">إسبريسو كلاسيك</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€5</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">قهوة بالحليب (Café au lait)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€10</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">شاي أخضر بالنعناع</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€13</span>
+                    </div>
+                </div>
+
+    <!-- عمود المأكولات -->
+                <div class="menu-column">
+                    <h3 class="column-title">LES PLATS</h3>
+                    <div class="menu-item">
+                        <span class="item-name">كروك مدام (Croque Madame)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€16</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">سلطة نيسواز (Salade Niçoise)</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€16</span>
+                    </div>
+                    <div class="menu-item">
+                        <span class="item-name">حلويات باريسية مشكلة</span>
+                        <span class="item-dots"></span>
+                        <span class="item-price">€14</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. استمارة حجز طاولة (Reservation Form) -->
+    <section id="reservations" class="reservation-section">
+        <div class="reservation-card">
+            <h2>RÉSERVER UNE TABLE</h2>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label>التاريخ</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>الوقت</label>
+                    <input type="time">
+                </div>
+                <div class="form-group">
+                    <label>عدد الأشخاص</label>
+                    <input type="number" min="1" max="10" placeholder="2">
+                </div>
+                <div class="form-group">
+                    <label>رقم الهاتف</label>
+                    <input type="tel" placeholder="06XXXXXXXX">
+                </div>
+                <button type="submit" class="submit-btn">تأكيد الحجز</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 5. قسم الخريطة والموقع (Location Section) -->
+    <section id="location" class="location-section">
+        <div class="location-container">
+            <div class="map-box">
+                <iframe src="https://maps.google.com/maps?q=Paris&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="info-box">
+                <h2>LOCATION</h2>
+                <h4>العنوان</h4>
+                <p>42 Rue de Sèvres, 75006 Paris</p>
+                <h4>أوقات العمل</h4>
+                <p>من الإثنين إلى الأحد: 15:00 - 18:30</p>
+                <h4>اتصلي بنا</h4>
+                <p>+33 1 23 45 67 89</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. تذييل الصفحة (Footer) -->
+    <footer class="main-footer">
+        <p>Le Chic Parisien © 2026 - جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>

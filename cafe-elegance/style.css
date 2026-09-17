@@ -1,0 +1,294 @@
+/* ==========================================
+   1. الإعدادات العامة والألوان
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    background-color: #12100e; /* خلفية داكنة فاخرة */
+    color: #e0c397;            /* لون ذهبي هادئ للنصوص */
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. شريط التنقل العلوي (Navbar)
+   ========================================== */
+.navbar-header {
+    background-color: #1c1815;
+    border-bottom: 2px solid #3d3129;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid #2a221c;
+}
+
+.logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #e0c397;
+    letter-spacing: 3px;
+    display: block;
+    text-align: center;
+}
+
+.reserve-btn {
+    border: 1px solid #e0c397;
+    color: #e0c397;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.reserve-btn:hover {
+    background-color: #e0c397;
+    color: #12100e;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px 0;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #d1c2b4;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e0c397;
+}
+
+/* ==========================================
+   3. القسم الرئيسي (Hero Section)
+   ========================================== */
+.hero-section {
+    position: relative;
+    height: 80vh; /* صورة كبيرة تمتد بعرض وارتفاع ممتاز */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5); /* تعتيم الصورة لإبراز النص فوقها */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero-slogan {
+    font-size: 22px;
+    color: #e0c397;
+    margin-bottom: 25px;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 1px solid #e0c397;
+    color: #ffffff;
+    text-decoration: none;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #e0c397;
+    color: #000;
+}
+
+/* ==========================================
+   4. قسم قائمة الطعام (Menu Section)
+   ========================================== */
+.menu-section {
+    padding: 80px 20px;
+    background-color: #171412;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-board {
+    background-color: #fdfbf7; /* خلفية ورقية كلاسيكية */
+    color: #2b231d;
+    padding: 50px 40px;
+    max-width: 900px;
+    width: 100%;
+    border: 2px solid #c8b29b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.menu-main-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #2b231d;
+    padding-bottom: 10px;
+}
+
+.menu-columns {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.menu-column {
+    flex: 1;
+}
+
+.column-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #8c7355;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-dots {
+    flex: 1;
+    border-bottom: 1px dotted #8c7355;
+    margin: 0 10px;
+}
+
+.item-price {
+    font-weight: bold;
+}
+
+/* ==========================================
+   5. استمارة الحجز والقسم السلفي (Reservations & Location)
+   ========================================== */
+.reservation-section, .location-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.reservation-card {
+    background-color: #1c1815;
+    border: 1px solid #3d3129;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    color: #e0c397;
+}
+
+.form-group input {
+    padding: 10px;
+    background-color: #12100e;
+    border: 1px solid #3d3129;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: #e0c397;
+    color: #12100e;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #c9ab7c;
+}
+
+.location-container {
+    display: flex;
+    gap: 30px;
+    background-color: #1c1815;
+    padding: 30px;
+    border: 1px solid #3d3129;
+}
+
+.map-box, .info-box {
+    flex: 1;
+}
+
+.info-box h4 {
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+/* ==========================================
+   6. الفوتر (Footer)
+   ========================================== */
+.main-footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #0d0b0a;
+    border-top: 1px solid #2a221c;
+    font-size: 14px;
+    color: #8c7355;
+}
